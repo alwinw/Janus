@@ -1,0 +1,4 @@
+[robotpybuild]
+Janus = Janus.pkgcfg
+Ute = Ute.pkgcfg
+

@@ -1,0 +1,38 @@
+
+[build-system]
+requires = ["robotpy-build"]
+
+[tool.robotpy-build]
+base_package = "Janus"
+
+[tool.robotpy-build.wrappers."Janus"]
+name = "Janus"
+# sources = [
+#     "Janus/Janus.cpp"
+# ]
+generation_data = "gen"
+# extra_includes = [
+#     "Ute"
+# ]
+
+[tool.robotpy-build.wrappers."Janus".autogen_headers]
+Janus = "Janus.h"
+
+# [tool.robotpy-build.wrappers."Ute"]
+# name = "Ute"
+# sources = [
+#     "Ute/aString.cpp"
+# ]
+# generation_data = "gen"
+
+# [tool.robotpy-build.wrappers."Ute".autogen_headers]
+# aString = "aString.h"
+
+[tool.robotpy-build.metadata]
+name = "pyJanus"
+description = "python bindings for Janus"
+author = "Alwin Wang"
+author_email = "robotpy@googlegroups.com"
+url = "16846521+alwinw@users.noreply.github.com"
+license = "MIT"
+install_requires = []

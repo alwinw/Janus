@@ -1,0 +1,131 @@
+---
+
+classes:
+  Janus:
+    attributes:
+      document_:
+      documentCreated_:
+      dataFileName_:
+      keyFileName_:
+      documentType_:
+      isJanusInitialised_:
+      fileHeader_:
+      variableDef_:
+      propertyDef_:
+      breakpointDef_:
+      griddedTableDef_:
+      ungriddedTableDef_:
+      function_:
+      signalDef_:
+      checkData_:
+      hasCheckData_:
+      isCheckDataCurrent_:
+      perturbationsFileName_:
+      outputIndex_:
+      nbp_:
+      frac_:
+      bpa_:
+      bpi_:
+      nOrd_:
+      fracBp_:
+      doMathML_to_ExprTk_:
+      kState_:
+    enums:
+      VersionType:
+      ExportObjectType:
+    methods:
+      Janus:
+        overloads:
+          "":
+          dstoute::aFileString&, dstoute::aFileString&:
+          dstoute::aFileString&, dstoute::aFileString&, dstoute::aFileString&:
+          unsigned char*, size_t:
+      clear:
+      setXmlFileName:
+        overloads:
+          dstoute::aFileString&, dstoute::aFileString&:
+          dstoute::aFileString&, dstoute::aFileString&, dstoute::aFileString&:
+      setXmlFileBuffer:
+      getXmlFileName:
+      getXmlKeyName:
+      getJanusVersion:
+      isJanusInitialised:
+        overloads:
+          '[const]':
+          bool:
+      initiateDocumentObjectModel:
+      getDomDocument:
+      getDomDocumentRootNode:
+      exportToFile:
+      exportToBuffer:
+        overloads:
+          std::ostringstream&:
+          unsigned char&*:
+      getFileHeader:
+      getVariableDef:
+        overloads:
+          "":
+          '[const]':
+          dstoute::aOptionalSizeT:
+          dstoute::aOptionalSizeT [const]:
+          dstoute::aString&:
+          dstoute::aString& [const]:
+      findVariableDef:
+      getVariableIndex:
+      getPropertyDef:
+        overloads:
+          "":
+          dstoute::aOptionalSizeT:
+          dstoute::aOptionalSizeT [const]:
+          dstoute::aString&:
+          dstoute::aString& [const]:
+      findPropertyDef:
+      getProperty:
+      getPropertyList:
+      propertyExists:
+      getBreakpointDef:
+      getGriddedTableDef:
+      getUngriddedTableDef:
+      getFunction:
+        overloads:
+          '[const]':
+          dstoute::aOptionalSizeT:
+      getSignalDef:
+        overloads:
+          "":
+          dstoute::aString&:
+      findSignalDef:
+      getCheckData:
+      displayCheckDataSummary:
+      crossReferenceId:
+      crossReferenceName:
+      isUniqueID:
+      readDefinitionFromDom:
+      setMathML_to_ExprTk:
+      getMathML_to_ExprTk:
+      getLinearInterpolation:
+        overloads:
+          Function&, std::vector<double>&:
+          Function&:
+      getPolyInterpolation:
+        overloads:
+          Function&, std::vector<double>&:
+          Function&:
+      getUngriddedInterpolation:
+        overloads:
+          Function&, std::vector<double>&:
+          Function&:
+      getAllDescendents:
+      getAllAncestors:
+      getIndependentAncestors:
+      getPdfFromAntecedents:
+      retrieveProvenanceReference:
+      exportToDocumentObjectModel:
+      writeDocumentObjectModel:
+        overloads:
+          dstoute::aFileString& [const]:
+          std::ostringstream& [const]:
+      releaseJanusDomParser:
+      parseDOM:
+      initialiseDependencies:
+      deleteLuaState:
