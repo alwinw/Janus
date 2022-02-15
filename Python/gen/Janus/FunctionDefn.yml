@@ -1,0 +1,22 @@
+---
+
+classes:
+  FunctionDefn:
+    methods:
+      FunctionDefn:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getDependentDataColumnNumber:
+      getTableType:
+      setTableType:
+      getTableReference:
+      getTableIndex:
+      setTableReference:
+      setTableIndex:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

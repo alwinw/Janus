@@ -1,0 +1,9 @@
+---
+
+classes:
+  Denominator:
+    methods:
+      Denominator:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:

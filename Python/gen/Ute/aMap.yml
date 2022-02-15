@@ -1,0 +1,22 @@
+---
+
+classes:
+  aMap:
+    methods:
+      aMap:
+        overloads:
+          "":
+          _InputIterator, _InputIterator:
+          std::initializer_list<value_type>, dstoute::aMap::key_compare&, dstoute::aMap::allocator_type&:
+            ignore: true
+      set:
+      contains_key:
+      contains_map:
+      get:
+      enable_if<sizeof:
+  aMap::CommaAssignment:
+    attributes:
+      am_:
+      k_:
+    methods:
+      CommaAssignment:

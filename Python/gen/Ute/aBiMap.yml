@@ -1,0 +1,49 @@
+---
+
+classes:
+  aBiMap:
+    methods:
+      aBiMap:
+        overloads:
+          "":
+          dstoute::aBiMap::fwd_map&:
+          std::initializer_list<value_type>:
+            ignore: true
+      set:
+      get:
+        overloads:
+          dstoute::aBiMap::key_type&, dstoute::aBiMap::mapped_type& [const]:
+          dstoute::aBiMap::mapped_type&, dstoute::aBiMap::key_type& [const]:
+      enable_if<sizeof:
+        overloads:
+          aOptional<__Tp>) [const]:
+          aOptional<__Key>) [const]:
+      forward:
+      reverse:
+      begin:
+      revBegin:
+      clear:
+      empty:
+      end:
+      revEnd:
+      erase:
+        overloads:
+          dstoute::aBiMap::key_type&:
+          dstoute::aBiMap::mapped_type&:
+          typename fwd_map::const_iterator&:
+          typename rev_map::const_iterator&:
+      find:
+        overloads:
+          dstoute::aBiMap::key_type& [const]:
+          dstoute::aBiMap::mapped_type& [const]:
+      size:
+      contains_key:
+      contains_map:
+      operator==:
+      operator!=:
+  aBiMap::CommaAssignment:
+    attributes:
+      bm_:
+      k_:
+    methods:
+      CommaAssignment:

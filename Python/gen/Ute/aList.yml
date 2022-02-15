@@ -1,0 +1,33 @@
+---
+
+classes:
+  aList:
+    methods:
+      aList:
+        overloads:
+          "":
+          dstoute::aList::allocator_type&:
+          size_type, dstoute::aList::value_type&, dstoute::aList::allocator_type&:
+          dstoute::aList::fwd_list&:
+          std::initializer_list<_Tp>&:
+            ignore: true
+      assign:
+        overloads:
+          _Tp2 ( ra&:
+          _Tp2&:
+      append:
+        overloads:
+          _Tp2 ( ra&:
+          _Tp2&:
+      find:
+        overloads:
+          dstoute::aList::value_type&:
+          dstoute::aList::value_type& [const]:
+      indexOf:
+      contains:
+      operator+:
+      operator+=:
+        overloads:
+          dstoute::aList&:
+          dstoute::aList::value_type&:
+      mask:

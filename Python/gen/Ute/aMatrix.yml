@@ -1,0 +1,371 @@
+---
+
+enums:
+  Cc_Dir:
+functions:
+  isnan:
+  isValid:
+  abs:
+  min:
+  max:
+  zero:
+  isZero:
+    overloads:
+      T&:
+      aSubVector<T>&:
+      valarray<T>&:
+  isNotZero:
+  toStdValArray:
+  toStdVector:
+  sign:
+  pythag:
+  swap:
+    ignore: true
+  cross:
+    overloads:
+      valarray<T>&:
+      valarray<T>&, aSubVector<T>&:
+      aSubVector<T>&, valarray<T>&:
+      aSubVector<T>&, aSubVector<T>&:
+      valarray<T>&, valarray<T>&:
+  eulerTransformMatrix:
+    overloads:
+      valarray<T>&:
+      T&, T&, T&:
+  findAbsMin:
+    overloads:
+      aSubVector<T>&, size_t:
+      valarray<T>&, size_t:
+  findAbsMax:
+    overloads:
+      aSubVector<T>&, size_t:
+      valarray<T>&, size_t:
+  findMin:
+    overloads:
+      aSubVector<T>&, size_t:
+      valarray<T>&, size_t:
+  findMax:
+    overloads:
+      aSubVector<T>&, size_t:
+      valarray<T>&, size_t:
+  dot:
+    overloads:
+      valarray<T>&, aSubVector<T>&:
+      aSubVector<T>&, valarray<T>&:
+      aSubVector<T>&, aSubVector<T>&:
+      valarray<T>&, valarray<T>&:
+  outerProduct:
+    overloads:
+      valarray<T>&, valarray<T>&:
+      valarray<T>&, aSubVector<T>&:
+      aSubVector<T>&, valarray<T>&:
+      aSubVector<T>&, aSubVector<T>&:
+  norm:
+    overloads:
+      aSubVector<T>&:
+      valarray<T>&:
+  assign:
+    overloads:
+      valarray<T>&, valarray<T>&:
+      std::vector<T>&, valarray<T>&:
+      valarray<T>&, std::vector<T>&:
+  bound:
+    overloads:
+      valarray<T>, valarray<T>&, valarray<T>&:
+      std::vector<T>, std::vector<T>&, std::vector<T>&:
+classes:
+  mslice:
+    methods:
+      mslice:
+      size:
+      rows:
+      cols:
+      startRow:
+      startCol:
+      endRow:
+      endCol:
+  aMatrix:
+    methods:
+      aMatrix:
+        overloads:
+          "":
+          size_t:
+          size_t, size_t:
+          aMatrix<T>&:
+          size_t, size_t, T&:
+          size_t, size_t, T, bool:
+          size_t, size_t, valarray<T>&, bool:
+      diag:
+        overloads:
+          int, int [const]:
+          int, int:
+      operator*=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator/=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator+=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator-=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator+:
+        overloads:
+          '[const]':
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, T&:
+          T&, aMatrix<T>&:
+      operator-:
+        overloads:
+          '[const]':
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, T&:
+          T&, aMatrix<T>&:
+      operator*:
+        overloads:
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, T&:
+          T&, aMatrix<T>&:
+          aMatrix<T>&, valarray<T>&:
+          valarray<T>&, aMatrix<T>&:
+      operator/:
+        overloads:
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, T&:
+          T&, aMatrix<T>&:
+          aMatrix<T>&, valarray<T>&:
+          valarray<T>&, aMatrix<T>&:
+      operator==:
+      operator!=:
+      isSquare:
+      isSingular:
+      isDiagonal:
+      isScalar:
+      isUnit:
+      isZero:
+      isNull:
+      isSymmetric:
+      isSkewSymmetric:
+      isUpperTriangular:
+      isLowerTriangular:
+      isRowOrthogonal:
+      isColumnOrthogonal:
+      isSameDimension:
+      isSingleValue:
+      isVector:
+      isRowVector:
+      isColumnVector:
+      gInfo:
+      gDecomposition:
+      gVectorBackSubstitution:
+      gMatrixBackSubstitution:
+      gBuildDecompositionMatrix:
+        overloads:
+          valarray<T>&, aMatrix<T>& [const]:
+          aMatrix<T>&, aMatrix<T>& [const]:
+      gSolve:
+        overloads:
+          valarray<T>& [const]:
+          aMatrix<T>& [const]:
+      gDeterminant:
+      gRank:
+      luDecomposition:
+      luBackSubstitution:
+      luSolve:
+      luDeterminant:
+      inverse:
+      svDecomposition:
+      svBackSubstitution:
+        overloads:
+          aMatrix<T>&, valarray<T>&, valarray<T>& [const]:
+          aMatrix<T>&, valarray<T>&, aMatrix<T>& [const]:
+      svSolve:
+        overloads:
+          valarray<T>& [const]:
+          aMatrix<T>& [const]:
+      svCovariance:
+      svVariance:
+      svRank:
+      svCondition:
+      solve:
+      determinant:
+      rank:
+      condition:
+      assign:
+      cols:
+      rows:
+      size:
+      typesize:
+      matrixData:
+        overloads:
+          "":
+          '[const]':
+      resize:
+      min:
+      max:
+      sum:
+      average:
+      trace:
+      unit:
+      zero:
+      'null':
+      rand:
+      norm:
+      normalise:
+      apply:
+        overloads:
+          T ( ) ( T )* [const]:
+          T ( ) ( T )&* [const]:
+          T ( ) ( size_t, size_t, T )* [const]:
+          T ( ) ( size_t, size_t, T )&* [const]:
+      bound:
+        overloads:
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, aMatrix<T>&, aMatrix<T>&:
+      eliminateRow:
+      eliminateColumn:
+      eulerTransformMatrix:
+        overloads:
+          valarray<T>&:
+          T&, T&, T&:
+          valarray<U>&:
+          U&, U&, U&:
+      eulerTransformMatrixPsi:
+      eulerTransformMatrixTheta:
+      eulerTransformMatrixPhi:
+      eulerTransformMatrixPsiTheta:
+      eulerTransformMatrixPsiPhi:
+      eulerTransformMatrixThetaPhi:
+      getEulerTransformMatrix:
+        overloads:
+          valarray<T>&:
+          T&, T&, T&:
+      getEulerTransformMatrixPsi:
+      getEulerTransformMatrixTheta:
+      getEulerTransformMatrixPhi:
+      getEulerTransformMatrixPsiTheta:
+      getEulerTransformMatrixPsiPhi:
+      getEulerTransformMatrixThetaPhi:
+      transformAngleAboutVector:
+      getTransformAngleAboutVector:
+      cross:
+        overloads:
+          valarray<T>&:
+          valarray<U>&:
+      getCross:
+      abs:
+      ceil:
+      floor:
+      pow:
+      acos:
+      asin:
+      atan:
+      atan2:
+        overloads:
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, T&:
+          T&, aMatrix<T>&:
+      cos:
+      cosh:
+      exp:
+      log:
+      log10:
+      sin:
+      sinh:
+      sqrt:
+      tan:
+      tanh:
+      concatenate:
+        overloads:
+          aMatrix<T>&, aMatrix<T>&:
+          aMatrix<T>&, aMatrix<T>&, dstomath::Cc_Dir:
+      swap:
+        ignore: true
+  aMatrix::gDecompositionInfo:
+    attributes:
+      rank:
+      determinant:
+    methods:
+      gDecompositionInfo:
+        overloads:
+          "":
+          size_t, T:
+  aMatrix::CommaAssignment:
+    attributes:
+      m_:
+      index:
+    methods:
+      CommaAssignment:
+  aSubVector:
+    methods:
+      aSubVector:
+      size:
+      operator*=:
+        overloads:
+          T& [const]:
+          valarray<T>& [const]:
+      operator/=:
+        overloads:
+          T& [const]:
+          valarray<T>& [const]:
+      operator+=:
+        overloads:
+          T& [const]:
+          valarray<T>& [const]:
+      operator-=:
+        overloads:
+          T& [const]:
+          valarray<T>& [const]:
+      operator*:
+        overloads:
+          dstomath::aSubVector&, T&:
+          T&, dstomath::aSubVector&:
+          dstomath::aSubVector&, valarray<T>&:
+          valarray<T>&, dstomath::aSubVector&:
+      operator/:
+        overloads:
+          dstomath::aSubVector&, T&:
+          T&, dstomath::aSubVector&:
+          dstomath::aSubVector&, valarray<T>&:
+          valarray<T>&, dstomath::aSubVector&:
+      operator+:
+        overloads:
+          dstomath::aSubVector&, T&:
+          T&, dstomath::aSubVector&:
+          dstomath::aSubVector&, valarray<T>&:
+          valarray<T>&, dstomath::aSubVector&:
+      operator-:
+        overloads:
+          dstomath::aSubVector&, T&:
+          T&, dstomath::aSubVector&:
+          dstomath::aSubVector&, valarray<T>&:
+          valarray<T>&, dstomath::aSubVector&:
+      isZero:
+      normalise:
+      swap:
+        ignore: true
+  aSubMatrix:
+    methods:
+      aSubMatrix:
+      rows:
+      cols:
+      getMatrix:
+      operator*=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator/=:
+      operator+=:
+        overloads:
+          aMatrix<T>&:
+          T&:
+      operator-=:
+        overloads:
+          aMatrix<T>&:
+          T&:

@@ -1,0 +1,39 @@
+---
+
+classes:
+  StatespaceFn:
+    methods:
+      StatespaceFn:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getSSID:
+      getStateVectorID:
+      getStateDerivVectorID:
+      getDisturbanceVectorID:
+      getStateMatrixID:
+      getInputMatrixID:
+      getStateDerivDisturbanceMatrixID:
+      getOutputMatrixID:
+      getDirectMatrixID:
+      getOutputDisturbanceMatrixID:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      setName:
+      setSSID:
+      setStateVectorID:
+      setStateDerivVectorID:
+      setDisturbanceVectorID:
+      setStateMatrixID:
+      setInputMatrixID:
+      setStateDerivDisturbanceMatrixID:
+      setOutputMatrixID:
+      setDirectMatrixID:
+      setOutputDisturbanceMatrixID:
+      setDescription:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:

@@ -1,0 +1,259 @@
+---
+
+attributes:
+  Max_Prefix_Length:
+  prefix_base:
+  prefix_deka:
+  prefix_hecto:
+  prefix_kilo:
+  prefix_mega:
+  prefix_giga:
+  prefix_tera:
+  prefix_peta:
+  prefix_exa:
+  prefix_zetta:
+  prefix_yotta:
+  prefix_deci:
+  prefix_centi:
+  prefix_milli:
+  prefix_micro:
+  prefix_nano:
+  prefix_pico:
+  prefix_femto:
+  prefix_atto:
+  prefix_zepto:
+  prefix_yocto:
+  base_units:
+  base_none:
+  base_length:
+  base_mass:
+  base_temp:
+  base_current:
+  base_mol:
+  base_lux:
+  base_angle:
+  base_time:
+  u_none:
+  u_m:
+  u_kg:
+  u_s:
+  u_degK:
+  u_A:
+  u_mol:
+  u_cd:
+  u_rad:
+  u_Hz:
+  u_N:
+  u_Pa:
+  u_J:
+  u_W:
+  u_C:
+  u_V:
+  u_F:
+  u_Ohm:
+  u_H:
+  u_S:
+  u_Wb:
+  u_T:
+  u_lm:
+  u_lx:
+  u_Bq:
+  u_Gy:
+  u_Sv:
+  u_kat:
+  c_G:
+  u_cm:
+  u_km:
+  u_in:
+  u_ft:
+  u_yd:
+  u_smi:
+  u_nmi:
+  u_furlong:
+  u_m2:
+  u_ft2:
+  u_ha:
+  u_are:
+  u_acre:
+  u_cm3:
+  u_in3:
+  u_ml:
+  u_l:
+  u_USgal:
+  u_UKgal:
+  u_g:
+  u_tonne:
+  u_slug:
+  u_lbm:
+  u_oz:
+  u_snail:
+  u_USton:
+  u_UKton:
+  u_min:
+  u_hours:
+  u_days:
+  u_weeks:
+  u_fortnights:
+  u_years:
+  u_months:
+  u_mps:
+  u_kph:
+  u_ftps:
+  u_mph:
+  u_kn:
+  u_degC:
+  u_degF:
+  u_degR:
+  u_deg:
+  u_grad:
+  u_rev:
+  u_kPa:
+  u_psi:
+  u_psf:
+  u_bar:
+  u_mbar:
+  u_mmHg:
+  u_inHg:
+  u_atm:
+  u_inH2O:
+  u_lbf:
+  u_hp:
+  u_cal:
+  u_btu:
+  u_erg:
+  u_mps2:
+  u_ftps2:
+  u_knps:
+  u_rpm:
+  u_radps:
+  u_degps:
+  unitsPrefixMapCache:
+  unitsMapCache:
+enums:
+  BaseDimensions:
+functions:
+  isValidUnit:
+  isCompatible:
+  convert:
+    overloads:
+      dstoute::aUnits&, dstoute::aUnits&:
+      dstoute::aUnits&, dstoute::aUnits&, double&:
+  convertFromSI:
+  convertUsing:
+    overloads:
+      dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+      dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+  deltaConvert:
+    overloads:
+      dstoute::aUnits&, dstoute::aUnits&:
+      dstoute::aUnits&, dstoute::aUnits&, double&:
+  scale:
+  scaleSI:
+  translate:
+  pow:
+  compose:
+  findUnits:
+  addUnits:
+  findCompatibleUnits:
+    overloads:
+      aString&:
+      dstoute::aUnits&:
+  deg2rad:
+  rad2deg:
+  degps2radps:
+  radps2degps:
+  m2ft:
+  ft2m:
+  m2nmi:
+  nmi2m:
+  mps2kn:
+  kn2mps:
+  mps2ftps:
+  ftps2mps:
+  N2lbf:
+  lbf2N:
+classes:
+  aUnits:
+    methods:
+      aUnits:
+        overloads:
+          "":
+          aString&, int, double&, double&:
+          aString&, dstoute::aUnits&:
+          aString&:
+      units:
+      value:
+      scale:
+        overloads:
+          '[const]':
+          dstoute::aUnits&, double&, double&:
+      offset:
+      scaleToMetric:
+      baseDim:
+      valueSI:
+      valueMetric:
+      unitsSI:
+      unitsMetric:
+      assign:
+      setValue:
+        overloads:
+          double&:
+          dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+      setScale:
+      setOffset:
+      setScaleToMetric:
+      setValueSI:
+      setValueMetric:
+      setUnits:
+        overloads:
+          dstoute::aUnits&:
+          aString&:
+          dstoute::aUnits&, dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+      clear:
+      isEmpty:
+      isCompatible:
+        overloads:
+          dstoute::aUnits&, bool [const]:
+          dstoute::aUnits&, dstoute::aUnits&:
+      isScalar:
+      operator+=:
+      operator-=:
+      operator*=:
+      operator/=:
+      operator+:
+      operator-:
+      operator*:
+        overloads:
+          dstoute::aUnits& [const]:
+          double& [const]:
+      operator/:
+        overloads:
+          dstoute::aUnits& [const]:
+          double& [const]:
+      isValidUnit:
+      convert:
+        overloads:
+          dstoute::aUnits&, dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&, double&:
+      convertFromSI:
+      convertUsing:
+        overloads:
+          dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&, dstoute::aUnits&:
+      deltaConvert:
+        overloads:
+          dstoute::aUnits&, dstoute::aUnits&:
+          dstoute::aUnits&, dstoute::aUnits&, double&:
+      scaleSI:
+      translate:
+      pow:
+      compose:
+      findUnits:
+  aOptionalValidator<aUnits>:
+    methods:
+      isValid:
+      invalidValue:
+      makeInvalid:

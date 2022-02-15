@@ -1,0 +1,23 @@
+---
+
+classes:
+  BreakpointDef:
+    methods:
+      BreakpointDef:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getBpID:
+      getUnits:
+      getDescription:
+      getBpVals:
+      getNumberOfBpVals:
+      setName:
+      setBpID:
+      setUnits:
+      setDescription:
+      setBpVals:
+      exportDefinition:
+      readDefinitionFromDom:

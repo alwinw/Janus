@@ -1,0 +1,21 @@
+---
+
+classes:
+  Reference:
+    methods:
+      Reference:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getXLink:
+      getXLinkType:
+      getRefID:
+      getAuthor:
+      getTitle:
+      getDate:
+      getClassification:
+      getAccession:
+      getHref:
+      getDescription:
+      exportDefinition:

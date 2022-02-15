@@ -1,0 +1,18 @@
+---
+
+classes:
+  DimensionDef:
+    methods:
+      DimensionDef:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getDimID:
+      getDimCount:
+      getDim:
+      getDimTotal:
+      setDimID:
+      setDimRecords:
+      exportDefinition:
+      setNotCurrent:

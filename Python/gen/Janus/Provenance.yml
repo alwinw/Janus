@@ -1,0 +1,31 @@
+---
+
+classes:
+  Provenance:
+    methods:
+      Provenance:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getProvID:
+      getAuthorCount:
+      getAuthor:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getCreationDate:
+      getDocumentRefCount:
+      getDocumentRefID:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getModificationRefCount:
+      getModificationModID:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getDescription:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:

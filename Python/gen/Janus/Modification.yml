@@ -1,0 +1,24 @@
+---
+
+classes:
+  Modification:
+    methods:
+      Modification:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getModID:
+      getDate:
+      getRefID:
+      getAuthorCount:
+      getAuthor:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getDescription:
+      getExtraDocCount:
+      getExtraDocRefID:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:

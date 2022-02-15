@@ -1,0 +1,40 @@
+---
+
+classes:
+  UngriddedTableDef:
+    methods:
+      UngriddedTableDef:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getDOMElement:
+      getName:
+      getUnits:
+      getUtID:
+      getIndependentVarCount:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      hasUncertainty:
+      getUncertainty:
+      getData:
+      getDelaunay:
+      getDataPointModID:
+      getDataTableColumnCount:
+      getDependentData:
+      getIndependentData:
+      getConnect:
+      getCentroid:
+      getXIVal:
+      getWeight:
+      getAMatrix:
+      lastUsedSimplex:
+        overloads:
+          '[const]':
+          size_t&:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:
+      getDelaunaySimplex:

@@ -1,0 +1,32 @@
+---
+
+classes:
+  SignalDef:
+    methods:
+      SignalDef:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, SignalTypeEnum&:
+      initialiseDefinition:
+      getName:
+      getSigID:
+      getUnits:
+      getSymbol:
+      getDescription:
+      getVarID:
+      getVarIndex:
+      isSigInput:
+      isSigInternal:
+      isSigOutput:
+      getValue:
+      getValueCount:
+      getTolerance:
+      getToleranceCount:
+      setSigID:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      setActualValue:
+      getActualValue:
+      clearActualValue:
+      isCheckValid:

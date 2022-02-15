@@ -1,0 +1,40 @@
+---
+
+classes:
+  FileHeader:
+    methods:
+      FileHeader:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getAuthorCount:
+      getAuthor:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getCreationDate:
+      getFileVersion:
+      getClassification:
+      getDataAssumptions:
+      getTag:
+      getType:
+      getDescription:
+      getReferenceCount:
+      getReference:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getModificationCount:
+      getModification:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getProvenanceCount:
+      getProvenance:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      exportDefinition:
+      readDefinitionFromDom:

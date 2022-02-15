@@ -1,0 +1,9 @@
+---
+
+classes:
+  CheckInputs:
+    methods:
+      CheckInputs:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, Janus*:

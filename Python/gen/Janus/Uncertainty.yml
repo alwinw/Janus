@@ -1,0 +1,26 @@
+---
+
+classes:
+  Uncertainty:
+    attributes:
+      uncertaintyAttributesMap:
+    enums:
+      UncertaintyPdf:
+    methods:
+      Uncertainty:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getEffect:
+      getPdf:
+      isSet:
+      getBounds:
+      getNumSigmas:
+      getCorrelation:
+      getCorrelationVarList:
+      setPdf:
+      setBoundsSize:
+      exportDefinition:
+      readDefinitionFromDom:
+      resetJanus:

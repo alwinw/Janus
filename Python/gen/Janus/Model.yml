@@ -1,0 +1,33 @@
+---
+
+classes:
+  Model:
+    methods:
+      Model:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getModelID:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      getModelMethod:
+      getIntegrationDomain:
+      getIntegrationMethod:
+      getIntegrationStep:
+      getInputID:
+      getTransferFn:
+      getStatespaceFn:
+      setName:
+      setModelID:
+      setDescription:
+      setModelMethod:
+      setIntegrationDomain:
+      setIntegrationMethod:
+      setIntegrationStep:
+      setInputVectorID:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:

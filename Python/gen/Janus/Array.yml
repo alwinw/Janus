@@ -1,0 +1,15 @@
+---
+
+classes:
+  Array:
+    methods:
+      Array:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getArraySize:
+      getStringDataTable:
+      setStringDataTable:
+      exportDefinition:
+      readDefinitionFromDom:

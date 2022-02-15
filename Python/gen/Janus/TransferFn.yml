@@ -1,0 +1,25 @@
+---
+
+classes:
+  TransferFn:
+    methods:
+      TransferFn:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getTFID:
+      getOrder:
+      getDescription:
+      getNumerator:
+      getDenominator:
+      hasProvenance:
+      getProvenance:
+      setName:
+      setTFID:
+      setOrder:
+      setDescription:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:

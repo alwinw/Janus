@@ -1,0 +1,9 @@
+---
+
+classes:
+  InternalValues:
+    methods:
+      InternalValues:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, janus::Janus*:

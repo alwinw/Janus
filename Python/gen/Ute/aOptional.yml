@@ -1,0 +1,97 @@
+---
+
+functions:
+  allOf:
+    overloads:
+      aOptional<T>, Args ...:
+      aOptional<T>:
+  anyOf:
+    overloads:
+      aOptional<T>, Args ...:
+      aOptional<T>:
+  countValid:
+    overloads:
+      aOptional<T>, Args ...:
+      aOptional<T>:
+classes:
+  aOptionalValidator:
+    methods:
+      isValid:
+      invalidValue:
+  aOptionalValidator<std::string>:
+    methods:
+      isValid:
+      invalidValue:
+  __has_make_invalid:
+  aOptional:
+    methods:
+      aOptional:
+        overloads:
+          "":
+          T&:
+      operator+=:
+      operator-=:
+      operator*=:
+      operator/=:
+      operator%=:
+      operator^=:
+      operator&=:
+      operator|=:
+      operator+:
+      operator-:
+      operator*:
+      operator/:
+      operator%:
+      operator^:
+      operator&:
+      operator|:
+      isValid:
+        overloads:
+          '[const]':
+          T&:
+      makeInvalid:
+      value:
+        overloads:
+          "":
+          '[const]':
+      invalidValue:
+      valueOr:
+      transform:
+      transformOptional:
+      call:
+  aOptional<bool>:
+    methods:
+      aOptional:
+        overloads:
+          "":
+          bool&:
+      isValid:
+      makeInvalid:
+      value:
+        overloads:
+          "":
+          '[const]':
+  aOptional<std::tuple<Ts...>>:
+    methods:
+      aOptional:
+        overloads:
+          "":
+          std::tuple<Ts ...>&:
+      isValid:
+      makeInvalid:
+      value:
+        overloads:
+          "":
+          '[const]':
+  aOptional<std::pair<T1,T2>>:
+    methods:
+      aOptional:
+        overloads:
+          "":
+          std::pair<T1, T2>&:
+      isValid:
+      makeInvalid:
+      value:
+        overloads:
+          "":
+          '[const]':

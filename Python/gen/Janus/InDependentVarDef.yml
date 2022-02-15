@@ -1,0 +1,23 @@
+---
+
+classes:
+  InDependentVarDef:
+    methods:
+      InDependentVarDef:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getVarID:
+      getUnits:
+      getSign:
+      getExtrapolationMethod:
+      getInterpolationMethod:
+      getMin:
+      getMax:
+      getData:
+      getVariableReference:
+      setVariableReference:
+      exportDefinition:
+      readDefinitionFromDom:

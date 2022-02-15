@@ -1,0 +1,14 @@
+---
+
+classes:
+  aFile:
+    methods:
+      aFile:
+        overloads:
+          "":
+          char*:
+          std::string&:
+      exists:
+      isDir:
+      isFile:
+      isExecutable:

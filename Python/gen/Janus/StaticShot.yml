@@ -1,0 +1,26 @@
+---
+
+classes:
+  StaticShot:
+    methods:
+      StaticShot:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, janus::Janus*:
+      initialiseDefinition:
+      getName:
+      getRefID:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      getCheckInputs:
+      hasInternalValues:
+      getInternalValues:
+      getCheckOutputs:
+      verifyStaticShot:
+      getInvalidVariableCount:
+      getInvalidVariableMessage:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

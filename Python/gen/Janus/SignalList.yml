@@ -1,0 +1,18 @@
+---
+
+classes:
+  SignalList:
+    methods:
+      SignalList:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, SignalTypeEnum&, janus::Janus*:
+      initialiseDefinition:
+      getSignalCount:
+      getSignalRef:
+      setSignalRef:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:
+      subList:

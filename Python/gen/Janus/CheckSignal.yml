@@ -1,0 +1,22 @@
+---
+
+classes:
+  CheckSignal:
+    methods:
+      CheckSignal:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, SignalTypeEnum&, janus::Janus*:
+      initialiseDefinition:
+      hasSignalList:
+      hasSignals:
+      getSignalCount:
+      getSignalType:
+      getSignalList:
+      getSignals:
+        overloads:
+          "":
+          '[const]':
+      exportDefinition:
+      readDefinitionFromDom:
+      resetJanus:

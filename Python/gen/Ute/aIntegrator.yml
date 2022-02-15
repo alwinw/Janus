@@ -1,0 +1,55 @@
+---
+
+classes:
+  aIntegrator:
+    enums:
+      IntegratorMethod:
+      AdaptMethod:
+      DerivativeMethod:
+    methods:
+      aIntegrator:
+      setIntegratorMethod:
+      getIntegratorMethod:
+      setDerivativeMethod:
+      getDerivativeMethod:
+      setAdaptMethod:
+      getAdaptMethod:
+      setAdaptiveStepControls:
+      integrate:
+        overloads:
+          std::string&, double&, double&, double*:
+          std::string&, std::valarray<double>&, std::valarray<double>&, std::valarray<double>*:
+          std::string&, std::vector<double>&, std::vector<double>&, std::vector<double>*:
+          std::string&, DMatrix&, DMatrix&, DMatrix*:
+      differentiate:
+        overloads:
+          std::string&, double&, double&:
+          std::string&, valarray<double>&, valarray<double>&:
+      step:
+      cycle:
+      cycleForSingleStep:
+      resetIntegrator:
+      setIntegrationTimeStep:
+      getIntegrationTimeStep:
+      setIntegrationTimeStepMin:
+      setIntegrationTimeStepMax:
+      getIntegrationTimeStepMin:
+      getIntegrationTimeStepMax:
+      setIntegrationTolerance:
+      getIntegrationError:
+      setRealTimeCycle:
+      isRealTimeCycle:
+      terminate:
+      preStepExecutive:
+      postStepExecutive:
+      derivativeExecutive:
+      onFailedAdaptiveStep:
+      isFirstPass:
+      setInitializeDerivative:
+      isInitializeDerivative:
+      getDerivativeHistory:
+      setDerivativeHistory:
+        overloads:
+          DMatrix:
+      getState:
+      setState:

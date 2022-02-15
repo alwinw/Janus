@@ -1,0 +1,23 @@
+---
+
+classes:
+  CheckData:
+    methods:
+      CheckData:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, janus::Janus*:
+      initialiseDefinition:
+      hasProvenance:
+      getProvenance:
+      getStaticShotCount:
+      getStaticShot:
+        overloads:
+          "":
+          '[const]':
+          size_t& [const]:
+      setStaticShot:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

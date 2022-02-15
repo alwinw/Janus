@@ -1,0 +1,38 @@
+---
+
+functions:
+  REQUIRED:
+  initialiseDOMForReading:
+    overloads:
+      XmlDoc&, dstoute::aString&:
+      XmlDoc&, unsigned char*, size_t&:
+      XmlDoc&, dstoute::aString&, dstoute::aString&:
+  getDocumentRootNode:
+  getCData:
+  getAttribute:
+  getWideAttribute:
+  isChildInNode:
+  getChild:
+  getChildByAttribute:
+  getChildName:
+  getChildValue:
+  getChildren:
+  getChildrenValues:
+  getSiblings:
+  getNodesByName:
+  getNodesByAttributeName:
+  initialiseChild:
+  initialiseChildren:
+  initialiseChildOrRef:
+  initialiseChildrenOrRefs:
+  setDocTypeDeclaration:
+  setComment:
+  setAttribute:
+  setChild:
+    overloads:
+      XmlNode&, dstoute::aString&:
+      XmlNode&, dstoute::aString&, dstoute::aString&:
+  setChildCData:
+  copyAllSiblings:
+classes:
+  DomWalker:

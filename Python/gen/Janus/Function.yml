@@ -1,0 +1,32 @@
+---
+
+classes:
+  Function:
+    methods:
+      Function:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      getDefnName:
+      getDependentVarRef:
+      getInDependentVarDef:
+      getIndependentVarCount:
+      getIndependentVarRef:
+      getIndependentVarMin:
+      getIndependentVarMax:
+      getIndependentVarExtrapolate:
+      getIndependentVarInterpolate:
+      isAllInterpolationLinear:
+      getTableType:
+      getTableRef:
+      getDependentDataColumnNumber:
+      getData:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

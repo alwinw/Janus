@@ -2,6 +2,7 @@
 [build-system]
 requires = ["robotpy-build"]
 
+#---- Janus ----
 [tool.robotpy-build]
 base_package = "Janus"
 
@@ -10,23 +11,91 @@ name = "Janus"
 # sources = [
 #     "Janus/Janus.cpp"
 # ]
-generation_data = "gen"
+generation_data = "Python/gen/Janus"
+# robotpy-build create-gen --write
 # extra_includes = [
 #     "Ute"
 # ]
 
 [tool.robotpy-build.wrappers."Janus".autogen_headers]
+# ls Janus/*.h | cat
+Array = "Array.h"
+Author = "Author.h"
+Bounds = "Bounds.h"
+BreakpointDef = "BreakpointDef.h"
+CheckData = "CheckData.h"
+CheckInputs = "CheckInputs.h"
+CheckOutputs = "CheckOutputs.h"
+CheckSignal = "CheckSignal.h"
+Denominator = "Denominator.h"
+DimensionDef = "DimensionDef.h"
+DomFunctions = "DomFunctions.h"
+DomTypes = "DomTypes.h"
+ElementDefinitionEnum = "ElementDefinitionEnum.h"
+ExportMathML = "ExportMathML.h"
+FileHeader = "FileHeader.h"
+Function = "Function.h"
+FunctionDefn = "FunctionDefn.h"
+GriddedTableDef = "GriddedTableDef.h"
+InDependentVarDef = "InDependentVarDef.h"
+InternalValues = "InternalValues.h"
 Janus = "Janus.h"
+JanusConfig = "JanusConfig.h"
+JanusConstants = "JanusConstants.h"
+JanusUtilities = "JanusUtilities.h"
+# JanusVariable = "JanusVariable.h" # ERROR
+JanusVariableManager = "JanusVariableManager.h"
+MathMLDataClass = "MathMLDataClass.h"
+Model = "Model.h"
+Modification = "Modification.h"
+Numerator = "Numerator.h"
+ParseMathML = "ParseMathML.h"
+PropertyDef = "PropertyDef.h"
+Provenance = "Provenance.h"
+Reference = "Reference.h"
+Signal = "Signal.h"
+SignalDef = "SignalDef.h"
+SignalList = "SignalList.h"
+Signals = "Signals.h"
+SolveMathML = "SolveMathML.h"
+StatespaceFn = "StatespaceFn.h"
+StaticShot = "StaticShot.h"
+TransferFn = "TransferFn.h"
+Uncertainty = "Uncertainty.h"
+UngriddedTableDef = "UngriddedTableDef.h"
+VariableDef = "VariableDef.h"
+XmlElementDefinition = "XmlElementDefinition.h"
+
+#---- Ute ----
+# [tool.robotpy-build]
+# base_package = "Ute"
 
 # [tool.robotpy-build.wrappers."Ute"]
 # name = "Ute"
-# sources = [
-#     "Ute/aString.cpp"
-# ]
-# generation_data = "gen"
+# # sources = [
+# #     "Ute/aString.cpp"
+# # ]
+# generation_data = "Python/gen/Ute"
+# # robotpy-build create-gen --write
 
 # [tool.robotpy-build.wrappers."Ute".autogen_headers]
+# # ls Ute/*.h | cat
+# aBiMap = "aBiMap.h"
+# aCrypt = "aCrypt.h"
+# aFile = "aFile.h"
+# aFileBuffer = "aFileBuffer.h"
+# aIntegrator = "aIntegrator.h"
+# aList = "aList.h"
+# aMap = "aMap.h"
+# aMath = "aMath.h"
+# aMatrix = "aMatrix.h"
+# aMessageStream = "aMessageStream.h"
+# aMutex = "aMutex.h"
+# aOptional = "aOptional.h"
+# aRealTimeClock = "aRealTimeClock.h"
 # aString = "aString.h"
+# aUnits = "aUnits.h"
+# UteConfig = "UteConfig.h"
 
 [tool.robotpy-build.metadata]
 name = "pyJanus"

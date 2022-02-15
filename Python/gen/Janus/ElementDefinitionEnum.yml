@@ -1,0 +1,11 @@
+---
+
+enums:
+  ElementDefinitionEnum:
+  SignalTypeEnum:
+  ExtrapolateMethod:
+  InterpolateMethod:
+  UncertaintyEffect:
+  ModelMethod:
+  IntegrationDomain:
+  IntegrationMethod:

@@ -1,0 +1,81 @@
+---
+
+attributes:
+  piX2:
+  pi:
+  pi_2:
+  pi_3:
+  pi_4:
+  pi_6:
+  pi_180:
+  d180_pi:
+functions:
+  zero:
+    overloads:
+      "":
+      double:
+  nan:
+  infinity:
+  abs:
+  min:
+    overloads:
+      T&, T&:
+      T&:
+      T&, T&, Ts ...&:
+  max:
+    overloads:
+      T&, T&:
+      T&:
+      T&, T&, Ts ...&:
+  isnan:
+  isValid:
+  finite:
+  isinf:
+  nearbyint:
+  copysign:
+  asinh:
+  acosh:
+  atanh:
+  isZero:
+  isNotZero:
+  isPositive:
+  isNegative:
+  round:
+  vint:
+    overloads:
+      T&, T&, T&, T&, T&:
+      T&, T&, T&:
+  mid_pnt:
+  isBetween:
+  between:
+  enorm:
+    overloads:
+      T&, T&, T&:
+      T&, T&:
+  fact:
+  isEven:
+  even:
+  isOdd:
+  odd:
+  isDivisible:
+  divisible:
+  sign:
+  ssqr:
+    overloads:
+      T&:
+      T&, Ts ...&:
+  bound:
+  boundPM:
+  mod:
+  modPM:
+  lower_bound_index:
+  reverse_lower_bound_index:
+  lower_bound_iterator:
+  next_pow2:
+  polynomial:
+    overloads:
+      T, T&:
+      T&, T&, Ts ...&:
+  safe_asin:
+  safe_acos:
+  safe_sqrt:

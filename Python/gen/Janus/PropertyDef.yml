@@ -1,0 +1,39 @@
+---
+
+classes:
+  PropertyDef:
+    attributes:
+      janus_:
+      elementType_:
+      name_:
+      ptyID_:
+      refID_:
+      description_:
+      propertyList_:
+      isProvenanceRef_:
+      hasProvenance_:
+      provenance_:
+    methods:
+      PropertyDef:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getPtyID:
+      getRefID:
+      getDescription:
+      hasProvenance:
+      getProvenance:
+      getProperty:
+      getPropertyList:
+      setName:
+      setPtyID:
+      setRefID:
+      setDescription:
+      setProperty:
+      setPropertyList:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

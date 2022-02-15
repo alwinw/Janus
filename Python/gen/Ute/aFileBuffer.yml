@@ -1,0 +1,23 @@
+---
+
+classes:
+  aFileBuffer:
+    methods:
+      aFileBuffer:
+        overloads:
+          "":
+          dstoute::aString&:
+      open:
+      close:
+      rewind:
+      size:
+      begin:
+      pos:
+      end:
+      operator+=:
+      operator-=:
+      setPos:
+      push:
+      pop:
+      at:
+      pos_value:

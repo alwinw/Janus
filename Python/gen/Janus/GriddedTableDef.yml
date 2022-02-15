@@ -1,0 +1,35 @@
+---
+
+classes:
+  GriddedTableDef:
+    methods:
+      GriddedTableDef:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getGtID:
+      getDescription:
+      getUnits:
+      hasProvenance:
+      getProvenance:
+      hasUncertainty:
+      getUncertainty:
+      getBreakpointRef:
+      getData:
+      isDataTableEmpty:
+      getStringData:
+      isStringDataTableEmpty:
+      setJanus:
+      setName:
+      setGtID:
+      setUnits:
+      setDescription:
+      setBreakpointRefs:
+      setTableData:
+      exportDefinition:
+      getDOMElement:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

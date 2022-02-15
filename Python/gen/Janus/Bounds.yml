@@ -1,0 +1,16 @@
+---
+
+classes:
+  Bounds:
+    methods:
+      Bounds:
+        overloads:
+          "":
+          janus::Janus*, DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getVarID:
+      getBound:
+      exportDefinition:
+      readDefinitionFromDom:
+      compareElementID:
+      resetJanus:

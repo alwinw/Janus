@@ -1,0 +1,9 @@
+---
+
+classes:
+  Numerator:
+    methods:
+      Numerator:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:

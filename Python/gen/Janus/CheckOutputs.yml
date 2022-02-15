@@ -1,0 +1,9 @@
+---
+
+classes:
+  CheckOutputs:
+    methods:
+      CheckOutputs:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, janus::Janus*:

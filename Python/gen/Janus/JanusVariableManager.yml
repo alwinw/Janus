@@ -1,0 +1,27 @@
+---
+
+classes:
+  JanusIndex:
+    attributes:
+      idx_:
+      indexerBase_:
+    methods:
+      JanusIndex:
+        overloads:
+          "":
+          size_t:
+      operator==:
+      isValid:
+  JanusVariableManager:
+    methods:
+      push_back:
+        overloads:
+          JanusVariable&:
+          std::vector<JanusVariable>&:
+      at:
+      setIndexer:
+      getIndexer:
+      clear:
+      clearManagedVariables:
+      jvList:
+      helpGetPropertyList:

@@ -1,0 +1,10 @@
+---
+
+classes:
+  XmlElementDefinition:
+    attributes:
+      elementType_:
+    methods:
+      XmlElementDefinition:
+      readDefinitionFromDom:
+      compareElementID:

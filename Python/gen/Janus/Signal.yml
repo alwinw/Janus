@@ -1,0 +1,18 @@
+---
+
+classes:
+  Signal:
+    methods:
+      Signal:
+        overloads:
+          "":
+          DomFunctions::XmlNode&, SignalTypeEnum&:
+      initialiseDefinition:
+      getName:
+      getUnits:
+      getVarID:
+      getValue:
+      getTolerance:
+      exportDefinition:
+      setActualValue:
+      getActualValue:

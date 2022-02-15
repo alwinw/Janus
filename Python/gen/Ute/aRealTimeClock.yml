@@ -1,0 +1,14 @@
+---
+
+classes:
+  aRealTimeClock:
+    methods:
+      aRealTimeClock:
+      start:
+      stop:
+      getDuration:
+      getRealTimeRatio:
+      sleep:
+        overloads:
+          int [const]:
+          double& [const]:

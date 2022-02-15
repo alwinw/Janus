@@ -1,0 +1,99 @@
+---
+
+functions:
+  setType:
+  setTag:
+  setTagName:
+  setFunctionName:
+  verbose:
+  endmsg:
+  endmsg_noeol:
+classes:
+  MessageStream:
+    attributes:
+      type_:
+      tag_:
+      tagName_:
+      functionName_:
+      isVerbose_:
+      isThrow_:
+    enums:
+      MessageType:
+    methods:
+      MessageStream:
+        overloads:
+          dstoute::MessageStream::MessageType, unsigned int:
+          aString&, dstoute::MessageStream::MessageType, unsigned int:
+      applicationName:
+      setApplicationName:
+      callback:
+      setCallback:
+      messageTypeNames:
+      setMessageTypeNames:
+      forceSegFault:
+      type:
+      typeName:
+      tag:
+      tagName:
+      functionName:
+      isVerbose:
+      verboseStr:
+      throwStr:
+      setType:
+      setTag:
+      setTagName:
+      setFunctionName:
+      setVerbose:
+      show:
+  MessageStream::_SetType:
+    attributes:
+      type:
+  MessageStream::_SetTag:
+    attributes:
+      tag:
+  MessageStream::_SetTagName:
+    attributes:
+      tagName:
+  MessageStream::_SetFunctionName:
+    attributes:
+      functionName:
+  ErrorStream:
+    methods:
+      ErrorStream:
+        overloads:
+          MessageType, unsigned int:
+          aString&, MessageType, unsigned int:
+      callback:
+      setCallback:
+  WarningStream:
+    methods:
+      WarningStream:
+        overloads:
+          MessageType, unsigned int:
+          aString&, MessageType, unsigned int:
+      callback:
+      setCallback:
+  StatusStream:
+    methods:
+      StatusStream:
+        overloads:
+          MessageType, unsigned int:
+          aString&, MessageType, unsigned int:
+      callback:
+      setCallback:
+  DebugStream:
+    methods:
+      DebugStream:
+        overloads:
+          MessageType, unsigned int:
+          aString&, MessageType, unsigned int:
+      callback:
+      setCallback:
+  InfoStream:
+    methods:
+      InfoStream:
+        overloads:
+          MessageType, unsigned int:
+          aString&, MessageType, unsigned int:
+      callback:
+      setCallback:

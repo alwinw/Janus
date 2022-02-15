@@ -1,0 +1,30 @@
+---
+
+attributes:
+  EXPONENTIALE:
+  EULERGAMMA:
+enums:
+  MathRetType:
+classes:
+  MathMLData:
+    attributes:
+      janus_:
+      functionTag_:
+      mathRetType_:
+      ciIndex_:
+      mathMLFunctionPtr_:
+      mathMLMatrixFunctionPtr_:
+      variableDef_:
+      mathChildren_:
+      attribute_:
+      cnValue_:
+      isMatrix_:
+      test_:
+      value_:
+      matrix_:
+    methods:
+      MathMLData:
+        overloads:
+          "":
+          janus::Janus*:
+      crossReference_ci:

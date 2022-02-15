@@ -1,0 +1,33 @@
+---
+
+classes:
+  Author:
+    methods:
+      Author:
+        overloads:
+          "":
+          DomFunctions::XmlNode&:
+      initialiseDefinition:
+      getName:
+      getOrg:
+      getXns:
+      getEmail:
+      getAddressCount:
+      getAddress:
+        overloads:
+          '[const]':
+          size_t& [const]:
+      getContactInfoCount:
+      getContactInfoType:
+      getContactLocation:
+      getContactInfo:
+      exportDefinition:
+      setName:
+      setOrg:
+      setXns:
+      setEmail:
+      setAddress:
+      setContactInfo:
+      setContactInfoType:
+      setContactLocation:
+      readDefinitionFromDom:
