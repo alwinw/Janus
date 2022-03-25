@@ -32,7 +32,7 @@ namespace py = pybind11;
 void init_aString(py::module_ &m)
 {
   py::class_<aString>(m, "aString")
-      .def(py::init<const std::string &>())
+      .def(py::init<const std::string &>(), py::arg("str"))
 
       .def("__repr__",
            [](const aString &self)
@@ -50,7 +50,7 @@ void init_aString(py::module_ &m)
            });
 
   py::class_<aFileString, aString>(m, "aFileString")
-      .def(py::init<const std::string &>())
+      .def(py::init<const std::string &>(), py::arg("str"))
 
       .def("__repr__",
            [](const aFileString &self)

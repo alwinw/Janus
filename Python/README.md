@@ -59,4 +59,5 @@ python -m twine upload dist/*
 
 ```console
 stubgen -p pyJanus -o .
+stubtest pyJanus
 ```

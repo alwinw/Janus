@@ -66,7 +66,7 @@ void init_JanusVariable(py::module_ &m)
       .def_property_readonly("var_id", &JanusVariable::getVarID)
 
       .def("get_value", &JanusVariable::value)
-      .def("set_value", &JanusVariable::setValue)
+      .def("set_value", &JanusVariable::setValue, py::arg("value"))
 
       .def("__repr__",
            [](JanusVariable &self)

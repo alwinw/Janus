@@ -46,16 +46,20 @@ void init_JanusVariableManager(py::module_ &m)
                     {
     JanusVariableManager jvm;
     jvm.setXmlFileName(filename);
-    return jvm; }))
+    return jvm; }),
+           py::arg("filename"))
 
       .def("push_back",
-           overload_cast_<const JanusVariable &>()(&JanusVariableManager::push_back))
+           overload_cast_<const JanusVariable &>()(&JanusVariableManager::push_back),
+           py::arg("janus_variable"))
       .def("push_back",
-           overload_cast_<const std::vector<JanusVariable> &>()(&JanusVariableManager::push_back))
+           overload_cast_<const std::vector<JanusVariable> &>()(&JanusVariableManager::push_back),
+           py::arg("janus_variables"))
 
       .def(
           "__getitem__",
           [](JanusVariableManager &jvm, const JanusIndex ji)
           { return &jvm[ji]; },
+          py::arg("janus_index"),
           py::return_value_policy::reference);
 }
