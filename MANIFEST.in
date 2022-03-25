@@ -47,6 +47,7 @@ include ThirdParty/qhull/src/libqhullcpp/*.h
 
 include Python/pybind11/LICENSE
 include Python/pybind11/CMakeLists.txt
+recursive-include *.pyi
 recursive-include Python/pybind11/include *.h
 recursive-include Python/pybind11/tools *
 

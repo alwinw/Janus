@@ -13,7 +13,6 @@ git submodule update --recursive
 git submodule update --recursive
 ```
 
-
 From the top level (maybe change to build_pyd)
 
 ```console
@@ -56,4 +55,8 @@ python setup.py sdist bdist_wheel
 ```console
 python -m twine check dist/*
 python -m twine upload dist/*
+```
+
+```console
+stubgen -p pyJanus -o .
 ```
