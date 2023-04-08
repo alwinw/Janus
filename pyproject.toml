@@ -62,7 +62,7 @@ test-extras = ["test"]
 before-build = "rm -rf {project}/build"
 
 [tool.commitizen]
-version = "0.2.2"
+version = "0.3.0"
 tag_format = "v$version"
 version_files = ["pyproject.toml:version", "setup.py"]
 update_changelog_on_bump = true

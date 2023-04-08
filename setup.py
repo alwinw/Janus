@@ -172,7 +172,7 @@ long_description = (this_dir / "README.md").read_text()
 # logic and declaration, and simpler if you include description/version in a file.
 setup(
     name="python-janus",
-    version="0.2.2",
+    version="0.3.0",
     author="Alwin Wang",
     author_email="16846521+AlwinW@users.noreply.github.com",
     url="https://github.com/alwinw/pyJanus",
