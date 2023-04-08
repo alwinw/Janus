@@ -36,7 +36,7 @@
 //------------------------------------------------------------------------//
 
 /**
- * \file Signal.cpp
+ * \file Sgnl.cpp
  *
  * A Signal instance holds in its allocated memory alphanumeric data
  * derived from a \em signal element of a DOM corresponding to

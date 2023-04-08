@@ -38,7 +38,7 @@
 
 using namespace std;
 
-//#define DEBUG_PRINT( ...) printf( __VA_ARGS__)
+// #define DEBUG_PRINT( ...) printf( __VA_ARGS__)
 #define DEBUG_PRINT( ...)
 
 template<typename _Kty, class _Pr = std::less<_Kty>, class _Alloc = std::allocator<_Kty>>
@@ -78,9 +78,9 @@ static void mdlInitializeSizes( SimStruct* S)
   ssSetNumSFcnParams( S, PARAM_COUNT);
   if ( ssGetNumSFcnParams( S) != ssGetSFcnParamsCount( S)) return;
 
-  ssSetSFcnParamTunable( S, PARAM_XML_FILENAME, 0);
-  ssSetSFcnParamTunable( S, PARAM_INDVARS, 0);
-  ssSetSFcnParamTunable( S, PARAM_DEPVARS, 0);
+  ssSetSFcnParamTunable( S, PARAM_XML_FILENAME, SS_PRM_NOT_TUNABLE);
+  ssSetSFcnParamTunable( S, PARAM_INDVARS, SS_PRM_NOT_TUNABLE);
+  ssSetSFcnParamTunable( S, PARAM_DEPVARS, SS_PRM_NOT_TUNABLE);
 
   ssSetNumContStates( S, 0);
   ssSetNumDiscStates( S, 0);
@@ -104,7 +104,7 @@ static void mdlInitializeSizes( SimStruct* S)
   // Get number of dependent variables
   const mxArray* depvarArray = ssGetSFcnParam( S, PARAM_DEPVARS);
   if ( mxGetClassID( depvarArray) != mxCHAR_CLASS) {
-    ssSetErrorStatus( S, "Dependent varIDs must be a string array.");
+    // ssSetErrorStatus( S, "Dependent varIDs must be a string array.");
     return;
   }
   const int nDepVars = mxGetM( depvarArray);
@@ -121,17 +121,23 @@ static void mdlInitializeSizes( SimStruct* S)
   ssSetNumNonsampledZCs( S, 0);
 
   ssSetOptions( S, 0);
+  /*ssSetOptions( S, SS_OPTION_USE_TLC_WITH_ACCELERATOR | SS_OPTION_WORKS_WITH_CODE_REUSE);
+  ssSetSupportedForCodeReuseAcrossModels( S, 1);*/
 }
 
 static void mdlInitializeSampleTimes( SimStruct* S)
 {
-  ssSetSampleTime( S, 0, CONTINUOUS_SAMPLE_TIME);
+  ssSetSampleTime( S, 0, INHERITED_SAMPLE_TIME);
   ssSetOffsetTime( S, 0, 0.0);
+
+  ssSetModelReferenceSampleTimeInheritanceRule( S, INHERITED_SAMPLE_TIME);
 }
 
 #define MDL_START
 static void mdlStart( SimStruct* S)
 {
+  if ( ssGetNumOutputPorts( S) == 0) return;
+
   ssGetPWork(S)[JANUS] = new janus::Janus;
   janus::Janus* janus = static_cast<janus::Janus*>( ssGetPWork(S)[JANUS]);
 
@@ -152,7 +158,7 @@ static void mdlStart( SimStruct* S)
   status = mxGetString( filenameArray, filename, filenameLength);
   DEBUG_PRINT( "filename: %s\n", filename);
   if ( status) {
-    ssSetErrorStatus( S, "XML filename could not be read");
+    // ssSetErrorStatus( S, "XML filename could not be read");
     return;
   }
 
@@ -181,21 +187,15 @@ static void mdlStart( SimStruct* S)
     }
     n = mxGetN( indvarArray);
     for ( int var = 0; var < nIndVars; ++var) {
-      for ( int i = 0; i < n; ++i) {
-        int iof = var + nIndVars * i;
-        int len = -1;
-        if ( indVarBuf[iof] == ' ') len = i + 1;
-        if ( i + 1 == n) len = i + 2;
-        if ( len != -1) {
-          indVarIDs[var] = static_cast<char*>( calloc( len, sizeof( char)));
-          indVarIDs[var][len-1] = '\0';
-          for ( int k = 0; k < len - 1; ++k) {
-            indVarIDs[var][k] = indVarBuf[var + nIndVars * k];
-          }
-          DEBUG_PRINT( "indVarIDs[%d]: %s\n", var, indVarIDs[var]);
-          break;
-        }
+      indVarIDs[var] = static_cast<char*>( calloc( n + 1, sizeof( char)));
+      int i = 0;
+      for ( ; i < n; ++i) {
+        if ( indVarBuf[var + nIndVars * i] == ' ') break;
+        indVarIDs[var][i] = indVarBuf[var + nIndVars * i];
       }
+      DEBUG_PRINT( "%d\t", i);
+      indVarIDs[var][i] = '\0';
+      DEBUG_PRINT( "indVarIDs[%d]: %s\n", var, indVarIDs[var]);
     }
     ssSetPWorkValue( S, INDVARIDS, indVarIDs);
     free( indVarBuf);
@@ -253,21 +253,15 @@ static void mdlStart( SimStruct* S)
   }
   n = mxGetN( depvarArray);
   for ( int var = 0; var < nDepVars; ++var) {
-    for ( int i = 0; i < n; ++i) {
-      int iof = var + nDepVars * i;
-      int len = -1;
-      if ( depVarBuf[iof] == ' ') len = i + 1;
-      if ( i + 1 == n) len = i + 2;
-      if ( len != -1) {
-        depVarIDs[var] = static_cast<char*>( calloc( len, sizeof( char)));
-        depVarIDs[var][len-1] = '\0';
-        for ( int k = 0; k < len - 1; ++k) {
-          depVarIDs[var][k] = depVarBuf[var + nDepVars * k];
-        }
-        DEBUG_PRINT( "depVarIDs[%d]: %s\n", var, depVarIDs[var]);
-        break;
-      }
+    depVarIDs[var] = static_cast<char*>( calloc( n + 1, sizeof( char)));
+    int i = 0;
+    for ( ; i < n; ++i) {
+      if ( depVarBuf[var + nDepVars * i] == ' ') break;
+      depVarIDs[var][i] = depVarBuf[var + nDepVars * i];
     }
+    DEBUG_PRINT( "%d\t", i);
+    depVarIDs[var][i] = '\0';
+    DEBUG_PRINT( "depVarIDs[%d]: %s\n", var, depVarIDs[var]);
   }
   ssSetPWorkValue( S, DEPVARIDS, depVarIDs);
   free( depVarBuf);
